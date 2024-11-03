@@ -7,13 +7,13 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-// Handle form submission for adding customers
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $customer_name = $_POST['customer_name'];
     $email = $_POST['email'];
-    $register_id = $_POST['register_id']; // Get the selected register ID
+    $register_id = $_POST['register_id']; 
 
-    // Insert the new customer with the foreign key
+    
     $query = "INSERT INTO customers (customer_name, email, register_id) VALUES ('$customer_name', '$email', '$register_id')";
     if (mysqli_query($conn, $query)) {
         $success = "Customer added successfully!";
@@ -22,11 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Fetch existing customers
+
 $query = "SELECT * FROM customers";
 $result = mysqli_query($conn, $query);
 
-// Fetch register users for the dropdown
+
 $register_query = "SELECT register_id, username FROM register";
 $register_result = mysqli_query($conn, $register_query);
 ?>
