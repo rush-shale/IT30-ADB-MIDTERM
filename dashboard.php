@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 
 $username = $_SESSION['username'];
 
-// Fetch products along with the associated customer names
+
 $query = "
     SELECT p.product_id, p.product_name, p.price, p.stock, c.customer_name, c.email
     FROM products p
