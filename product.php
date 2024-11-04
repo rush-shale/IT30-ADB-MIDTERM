@@ -7,14 +7,14 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-// Handle form submission for adding products
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_name = $_POST['product_name'];
     $price = $_POST['price'];
     $stock = $_POST['stock'];
-    $customer_id = $_POST['customer_id']; // Get the selected customer ID
+    $customer_id = $_POST['customer_id']; 
 
-    // Insert the new product with the foreign key
+   
     $query = "INSERT INTO products (product_name, price, stock, customer_id) VALUES ('$product_name', '$price', '$stock', '$customer_id')";
     if (mysqli_query($conn, $query)) {
         $success = "Product added successfully!";
@@ -23,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Fetch existing products
+
 $query = "SELECT * FROM products";
 $result = mysqli_query($conn, $query);
 
-// Fetch customers for the dropdown
+
 $customer_query = "SELECT customer_id, customer_name FROM customers";
 $customer_result = mysqli_query($conn, $customer_query);
 ?>
