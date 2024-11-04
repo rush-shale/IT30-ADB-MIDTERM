@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2024 at 01:21 AM
+-- Generation Time: Nov 04, 2024 at 01:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -66,11 +66,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `price`, `stock`, `created_at`, `customer_id`) VALUES
-(11, 'Hawaiian Pizza', 130.00, 0, '2024-10-29 13:23:45', 9),
-(12, 'Snack', 41.00, 70, '2024-10-29 13:24:01', 10),
-(13, 'Hawaiian Pizza', 100.00, 25, '2024-10-29 13:26:45', 11),
-(14, 'Hawaiian Pizza', 23.00, 1, '2024-10-29 13:36:46', 8),
-(15, 'meal time', 400.00, 2, '2024-10-29 14:14:38', 13);
+(11, 'full set cover wave125', 6000.00, 0, '2024-10-29 13:23:45', 9),
+(12, 'rim set ', 2500.00, 70, '2024-10-29 13:24:01', 10),
+(13, 'fulltits pipe', 5000.00, 25, '2024-10-29 13:26:45', 11);
 
 -- --------------------------------------------------------
 
