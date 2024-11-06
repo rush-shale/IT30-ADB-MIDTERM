@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racing Aarts And Accesories</title>
+    <title>Racing Parts And Accessories</title>
     <style>
         /* Global styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background-color: #000;
+            background-image: url("image/monkey-dluffy-one-piece-4k-87.jpg"); /* Replace with your image path */
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
             color: #f1f1f1;
         }
 
@@ -110,7 +114,7 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-    <div class="logo">Racing Parts And Accesories</div>
+    <div class="logo">Racing Parts And Accessories</div>
     <div>
         <a href="history.php">History Log</a>
         <a href="dashboard.php">Home</a>
@@ -120,7 +124,7 @@
 
 <!-- Dashboard Section -->
 <div class="dashboard">
-    <h1>Point of Sale - Racing Parts And Accessories </h1>
+    <h1>Point of Sale - Racing Parts And Accessories</h1>
 
     <!-- Product Selection -->
     <div class="product-selection">
