@@ -110,7 +110,7 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-    <div class="logo">Racing Aarts And Accesories</div>
+    <div class="logo">Racing Parts And Accesories</div>
     <div>
         <a href="history.php">History Log</a>
         <a href="dashboard.php">Home</a>
