@@ -1,3 +1,43 @@
+<?php
+include 'config.php'; // Include your database connection file
+
+// Fetch transactions for Left Join
+function fetchLeftJoinTransactions() {
+    global $pdo;
+    $stmt = $pdo->query("SELECT t.id, u.username, p.name AS product_name, t.quantity, t.total_amount, t.payment, t.created_at 
+                          FROM transactions t 
+                          LEFT JOIN users u ON t.user_id = u.id 
+                          LEFT JOIN products p ON t.product_id = p.id");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+// Fetch transactions for Right Join
+function fetchRightJoinTransactions() {
+    global $pdo;
+    $stmt = $pdo->query("SELECT t.id, u.username, p.name AS product_name, t.quantity, t.total_amount, t.payment, t.created_at 
+                          FROM transactions t 
+                          RIGHT JOIN users u ON t.user_id = u.id 
+                          RIGHT JOIN products p ON t.product_id = p.id");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+// Fetch transactions for Union Join
+function fetchUnionTransactions() {
+    global $pdo;
+    $stmt = $pdo->query("SELECT t.id AS transaction_id, u.username, t.total_amount 
+                          FROM transactions t 
+                          JOIN users u ON t.user_id = u.id 
+                          UNION 
+                          SELECT NULL, u.username, NULL 
+                          FROM users u");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+$leftJoinTransactions = fetchLeftJoinTransactions();
+$rightJoinTransactions = fetchRightJoinTransactions();
+$unionTransactions = fetchUnionTransactions();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +50,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #f1f1f1;
-            background-image: url("image/one\ piece\ anime.png"); /* Update with your image path */
+            background-image: url("image/one\ piece\ anime.png"); /* Correct image path */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            color: #f1f1f1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f1f1f1;
         }
 
         /* Navbar styles */
         .navbar {
-            background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+            background-color: #000;
             color: #f1f1f1;
             padding: 1em;
             display: flex;
@@ -48,9 +95,6 @@
             padding: 2em;
             max-width: 800px;
             margin: auto;
-            background-color: rgba(18, 18, 18, 0.9); /* Semi-transparent background for readability */
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
 
         .button-container {

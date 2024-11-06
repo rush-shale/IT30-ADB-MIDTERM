@@ -94,23 +94,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <style>
         body {
             font: 14px sans-serif;
-            background-color: #121212; /* Dark background */
+            background-color: grey; /* Dark background */
             color: #ffffff; /* White text */
         }
         .wrapper {
             width: 360px;
             padding: 20px;
-            background-color: #1e1e1e; /* Slightly lighter dark background */
+            background-color: white; /* Slightly lighter dark background */
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.3); /* Red glow */
             margin: auto;
             margin-top: 100px;
         }
         h2, p {
-            color: #ff3333; /* Red headings */
+            color: brown; /* Red headings */
         }
         .form-control {
-            background-color: #2e2e2e;
+            background-color: white;
             color: #ffffff;
             border: 1px solid #ff3333; /* Red border */
         }
