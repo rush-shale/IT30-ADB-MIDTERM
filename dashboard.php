@@ -129,7 +129,7 @@
             <option value="1" data-price="15">jrp swing arm - 2500.00</option>
             <option value="2" data-price="10">jrp flat seat - 1500.00</option>
             <option value="3" data-price="12">jrp handle bar - 3000.00</option>
-            <option value="4" data-price="18">Tequila - $18</option>
+            <option value="4" data-price="18">sdr rim - 2800.00</option>
             <option value="5" data-price="14">Gin - $14</option>
             <option value="6" data-price="16">Brandy - $16</option>
             <option value="7" data-price="8">Wine - $8</option>
