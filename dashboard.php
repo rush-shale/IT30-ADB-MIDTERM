@@ -120,7 +120,7 @@
 
 <!-- Dashboard Section -->
 <div class="dashboard">
-    <h1>Point of Sale - Alcohol Products</h1>
+    <h1>Point of Sale - Racing Parts And Accessories </h1>
 
     <!-- Product Selection -->
     <div class="product-selection">
