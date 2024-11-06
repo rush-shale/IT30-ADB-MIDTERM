@@ -126,7 +126,7 @@
     <div class="product-selection">
         <label for="product">Select Product:</label>
         <select id="product">
-            <option value="1" data-price="15">Whiskey - $15</option>
+            <option value="1" data-price="15">jrp swing arm -2500.00</option>
             <option value="2" data-price="10">Vodka - $10</option>
             <option value="3" data-price="12">Rum - $12</option>
             <option value="4" data-price="18">Tequila - $18</option>
