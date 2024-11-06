@@ -133,7 +133,7 @@
             <option value="5" data-price="14">AUN open pipe - 12000.00</option>
             <option value="6" data-price="16">Z5 4 valves W125 - 6000.00</option>
             <option value="7" data-price="8">racing CDI - 1250.00</option>
-            <option value="8" data-price="5">Beer - $5</option>
+            <option value="8" data-price="5">wave 125 full decals - 800.00</option>
             <option value="9" data-price="7">Cider - $7</option>
             <option value="10" data-price="20">Champagne - $20</option>
         </select>
