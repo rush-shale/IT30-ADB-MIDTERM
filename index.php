@@ -92,7 +92,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
+       body {
+            font: 14px sans-serif;
+            background-image: url("image/hq720.jpg"); /* Add your image path here */
+            background-size: cover; /* Ensure the image covers the whole background */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Fix the background when scrolling */
+            color: #ffffff; /* White text */
+        }
+       body {
             font: 14px sans-serif;
             background-color: grey; /* Dark background */
             color: #ffffff; /* White text */
