@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2024 at 10:12 AM
+-- Generation Time: Nov 08, 2024 at 05:52 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rushel08`
+-- Database: `john`
 --
 
 -- --------------------------------------------------------
@@ -96,8 +96,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `first_login`) VALUES
-(1, '', '', '2024-11-03 10:14:49', 1),
-(3, 'rushel', '$2y$10$0/ZsAs3UCNKTENKy4PL9vuAUHGOgyXVI7anzQtRNqxHixmZL65qiO', '2024-11-06 16:58:28', 1);
+(1, '', '', '2024-11-03 10:14:49', 1);
 
 --
 -- Indexes for dumped tables
